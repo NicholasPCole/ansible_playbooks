@@ -1,0 +1,15 @@
+---
+- hosts: all
+  roles:
+    - nicholaspcole.systems.timezone
+    - nicholaspcole.systems.aptitude
+    - nicholaspcole.systems.chrony
+    - nicholaspcole.systems.dnf
+    - nicholaspcole.systems.ssh
+    - nicholaspcole.systems.screen
+    - nicholaspcole.systems.vim
+    - nicholaspcole.systems.zsh
+
+- hosts: workstations
+  roles:
+    - nicholaspcole.systems.git
